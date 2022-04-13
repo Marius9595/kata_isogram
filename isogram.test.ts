@@ -1,5 +1,5 @@
 function isogram(word:string): boolean {
-    return null;
+    return true;
 }
 
 //🟢🔴
