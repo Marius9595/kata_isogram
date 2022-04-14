@@ -3,18 +3,25 @@ function isogram(word:string): boolean {
         return true;
     }
 
-    for (let i = 0; i < word.length; i++) {
+    if(there_is_reapeated_letters(word)){
+        return false;
+    }
 
+    return true;
+}
+
+function there_is_reapeated_letters(word:string):boolean{
+
+    for (let i = 0; i < word.length; i++) {
         let letter_to_compare = word[i];
         for (let j = 0; j < word.length; j++) {
             let letter = word[j];
             if(letter_to_compare === letter) {
-                return false;
+                return true;
             }
         }
     }
-
-    return true;
+    return false;
 }
 
 //🟢🔴
