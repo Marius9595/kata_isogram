@@ -2,12 +2,7 @@ function isogram(word:string): boolean {
     if(word === ""){
         return true;
     }
-
-    if(there_is_reapeated_letters(word)){
-        return false;
-    }
-
-    return true;
+    return there_is_reapeated_letters(word)?false:true;
 }
 
 function there_is_reapeated_letters(word:string):boolean{
